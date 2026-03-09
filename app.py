@@ -162,15 +162,18 @@ elif nav == "💼 Business Case Calculator":
     new_swaps_mo = base_swaps_mo * (1 + (inc_utilization / 100))
     new_opcost = base_opcost * (1 - (dec_opcost / 100))
     monthly_rev_stn = new_swaps_mo * base_rev_per_swap
-    total_rev_3years = monthly_rev_stn * stns * months
-    net_benefit = total_rev_3years - investments
+    monthly_cost_stn = new_swaps_mo * new_opcost
+    monthly_profit_stn = monthly_rev_stn - monthly_cost_stn
+    
+    total_profit_3years = monthly_profit_stn * stns * months
+    net_benefit = total_profit_3years - investments
     
     st.markdown("### Financial Projection Summary")
     
     metrics = st.columns(3)
-    metrics[0].metric("Monthly Revenue/Station", f"₹{monthly_rev_stn:,.0f}")
+    metrics[0].metric("Monthly Profit/Station", f"₹{monthly_profit_stn:,.0f}")
     metrics[1].metric("Total Initial Investment", f"₹{investments:,.0f}")
-    metrics[2].metric("Estimated 3-Year Gross", f"₹{total_rev_3years:,.0f}")
+    metrics[2].metric("Estimated 3-Year Profit", f"₹{total_profit_3years:,.0f}")
     
     if net_benefit >= 0:
         st.success(f"# ✅ Projected Net Benefit: +₹{net_benefit:,.0f}")
