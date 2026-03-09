@@ -1,5 +1,6 @@
 # ⚡ VoltSwap Battery Station Analysis (Case Study 52)
 
+👉 **[Live Interactive Dashboard](https://voltswap-analysis-mg3qh7uxzaotbu57htwjtv.streamlit.app/)**
 ### 🎯 Business Problem Statement
 VoltSwap wants to invest ₹50 Lakhs in smart EV battery swapping stations. The goal of this project is to simulate station usage, analyze demand patterns, and evaluate whether the investment will be profitable while solving the issue of long EV charging times.
 
