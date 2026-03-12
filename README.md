@@ -40,7 +40,7 @@ VoltSwap wants to invest ₹50 Lakhs in smart EV battery swapping stations. The 
 5. **Recommendation:** Deploying battery swapping stations significantly reduces EV charging time from several hours to a few minutes, improving EV adoption and operational profitability.
 
 ### 📸 Financial Projection Model (Excel/Google Sheets)
-![Financial Projection Dashboard](https://raw.githubusercontent.com/Shweta-Tech-creator/VoltSwap-Analysis/main/images/s1.png)
+![Financial Projection Dashboard](images/s1.png)
 
 *This financial calculator models operational assumptions, scenario inputs, and 3-year profitability. With increased utilization and cost optimization, VoltSwap can achieve a total project profit of **₹1.26 Crores**, resulting in a positive **₹76 Lakhs net benefit** after accounting for the initial capital investment.*
 
